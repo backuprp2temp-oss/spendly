@@ -1,0 +1,207 @@
+/* ------------------------------------------------------------------ */
+/* Landing page - hero section                                        */
+/* ------------------------------------------------------------------ */
+
+.hero {
+    padding: 4rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 760px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #e3f2ea;
+    color: #3f8666;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.5rem 1.15rem;
+    border-radius: 999px;
+    margin-bottom: 1.75rem;
+}
+
+.hero-badge-dot {
+    width: 8px;
+    height: 8px;
+    background: #6fc191;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.75rem, 6vw, 5rem);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    margin: 0 0 1rem;
+}
+
+.hero-title-emphasis {
+    color: #439a78;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    color: #6b6b6b;
+    line-height: 1.7;
+    max-width: 720px;
+    margin: 0 auto 2.75rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.btn-hero {
+    display: inline-block;
+    background: #171717;
+    color: #fff;
+    padding: 0.95rem 2.4rem;
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-hero:hover { background: #000; }
+
+/* ------------------------------------------------------------------ */
+/* Hero visual (dashboard mock card)                                  */
+/* ------------------------------------------------------------------ */
+
+.hero-visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mock-card {
+    position: relative;
+    background: #f4f3f0;
+    border: 1px solid #eae7e0;
+    border-radius: 24px;
+    padding: 2.75rem 2.25rem 2.5rem;
+    width: 100%;
+    max-width: 880px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.08);
+}
+
+.window-controls {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.4rem;
+    display: flex;
+    gap: 0.55rem;
+}
+
+.wc {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.wc-red { background: #e5988c; }
+.wc-yellow { background: #f4c583; }
+.wc-green { background: #b5dcc4; }
+
+.mock-stats {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.stat-card {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #ece9e0;
+    border-radius: 14px;
+    padding: 1.15rem 1rem;
+    text-align: left;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #9a9a9a;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 0.45rem;
+}
+
+.stat-value {
+    font-family: var(--font-display);
+    font-size: 1.85rem;
+    color: var(--ink);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.stat-delta {
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+}
+
+.stat-delta.stat-delta-up { color: #c0392b; }
+.stat-delta.stat-delta-down { color: #439a78; }
+
+.mock-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 0.95rem;
+}
+
+.mock-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mock-cat {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ink);
+    min-width: 56px;
+}
+
+.mock-bar-track {
+    flex: 1;
+    height: 9px;
+    background: #e8e5dd;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.mock-bar {
+    height: 100%;
+    border-radius: 999px;
+}
+
+.mock-bar-food { background: #e8a33d; }
+.mock-bar-travel { background: #5a86e8; }
+.mock-bar-bills { background: #8b5e83; }
+
+@media (max-width: 600px) {
+    .hero { padding: 3rem 1rem 2rem; }
+    .mock-stats { flex-direction: column; gap: 0.8rem; }
+    .mock-card { padding: 1.75rem 1.25rem 1.5rem; }
+}
